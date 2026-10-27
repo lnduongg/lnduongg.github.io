@@ -1,0 +1,430 @@
+/* Homepage scale and spacing. Keep case-study CSS untouched. */
+.home-page {
+    font-size: 15px;
+    line-height: 1.6
+}
+
+.home-page .container {
+    width: min(1120px, calc(100% - 64px))
+}
+
+.home-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(270px, .7fr);
+    align-items: center;
+    gap: 54px;
+    padding-top: 100px;
+    padding-bottom: 90px
+}
+
+.home-eyebrow {
+    margin: 0 0 17px;
+    color: #85baff;
+    font-size: 11px;
+    letter-spacing: .14em;
+    font-weight: 700
+}
+
+.home-intro h1 {
+    font-size: clamp(39px, 5vw, 64px);
+    line-height: 1.09;
+    letter-spacing: -.055em;
+    margin: 0 0 18px;
+    font-weight: 760
+}
+
+.home-lead {
+    max-width: 680px;
+    font-size: 16px;
+    color: #b1bfd2;
+    margin: 0;
+    line-height: 1.75
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px
+}
+
+.home-info {
+    border: 1px solid #2a3b50;
+    border-radius: 14px;
+    padding: 12px 25px;
+    background: #111b29
+}
+
+.home-info>div {
+    padding: 16px 0;
+    border-bottom: 1px solid #2a3b50;
+    display: flex;
+    flex-direction: column;
+    gap: 3px
+}
+
+.home-info>div:last-child {
+    border: 0
+}
+
+.home-info span,
+.home-about-facts span {
+    font-size: 11px;
+    color: #849bb7
+}
+
+.home-info strong,
+.home-about-facts strong {
+    font-size: 14px;
+    font-weight: 620;
+    color: #e6eef8
+}
+
+.home-section {
+    padding-top: 72px;
+    padding-bottom: 78px
+}
+
+.home-section-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+    border-bottom: 1px solid #2a3a4d;
+    padding-bottom: 19px;
+    margin-bottom: 28px
+}
+
+.home-section-title h2,
+.home-contact h2 {
+    font-size: clamp(25px, 2.6vw, 32px);
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: -.035em
+}
+
+.home-section-title>span {
+    color: #849ab5;
+    font-size: 12px
+}
+
+.home-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px
+}
+
+.home-project-card {
+    background: #121c2a;
+    border: 1px solid #2c3c50;
+    border-radius: 13px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0
+}
+
+.home-project-thumb {
+    height: 210px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #19283a
+}
+
+.home-project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s ease
+}
+
+.home-project-thumb:hover img {
+    transform: scale(1.035)
+}
+
+.home-placeholder {
+    flex-direction: column;
+    gap: 8px;
+    color: #99b6d4;
+    font-weight: 700;
+    letter-spacing: .15em;
+    font-size: 12px
+}
+
+.home-placeholder-map {
+    background: radial-gradient(ellipse at 80% 15%, #25465b, transparent 55%), linear-gradient(145deg, #15283a, #101a28)
+}
+
+.home-placeholder-chat {
+    background: radial-gradient(ellipse at 20% 60%, #24495a, transparent 55%), linear-gradient(145deg, #132637, #101a28)
+}
+
+.placeholder-icon {
+    font-size: 57px;
+    font-weight: 300;
+    line-height: 1;
+    color: #87adc8
+}
+
+.home-project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 23px
+}
+
+.home-project-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 10px;
+    letter-spacing: .08em;
+    color: #8ba5c5;
+    font-weight: 700
+}
+
+.home-project-meta span {
+    white-space: nowrap;
+    color: #718eae
+}
+
+.home-project-content h3 {
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: -.025em;
+    margin: 17px 0 11px;
+    font-weight: 720
+}
+
+.home-project-content>p {
+    font-size: 13px;
+    line-height: 1.65;
+    color: #aabbd0;
+    margin: 0 0 18px
+}
+
+.home-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: auto
+}
+
+.home-tags span {
+    font-size: 11px;
+    border: 1px solid #34485f;
+    border-radius: 5px;
+    color: #b4cbe3;
+    padding: 4px 7px;
+    background: #1a2a3d
+}
+
+.home-project-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 48px;
+    margin-top: 19px;
+    border-top: 1px solid #29394b;
+    padding-top: 14px
+}
+
+.home-project-links a {
+    font-size: 12px;
+    color: #a3cbff;
+    font-weight: 650
+}
+
+.home-project-links a:hover {
+    color: #fff
+}
+
+.home-unlinked {
+    font-size: 12px;
+    color: #7891aa
+}
+
+.home-section-note {
+    font-size: 12px;
+    color: #829ab5;
+    margin: 24px 0 0
+}
+
+.home-band {
+    background: #0f1723;
+    border-block: 1px solid #1e2c3e
+}
+
+.home-skills-section {
+    padding-block: 70px
+}
+
+.home-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px
+}
+
+.home-skills-grid>div {
+    border-left: 2px solid #456d97;
+    padding-left: 17px
+}
+
+.home-skills-grid h3 {
+    font-size: 15px;
+    margin: 0 0 8px
+}
+
+.home-skills-grid p {
+    font-size: 13px;
+    color: #a5b7ca;
+    line-height: 1.7;
+    margin: 0
+}
+
+.home-about {
+    padding-block: 70px
+}
+
+.home-about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px
+}
+
+.home-about-grid>p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #b4c1d1;
+    margin: 0
+}
+
+.home-about-facts {
+    display: grid;
+    gap: 17px
+}
+
+.home-about-facts>div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px
+}
+
+.home-contact {
+    padding: 48px 0;
+    background: #101e2c;
+    border-top: 1px solid #2a3b4f
+}
+
+.home-contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px
+}
+
+.home-contact p {
+    margin: 6px 0 0;
+    color: #a7b9cd;
+    font-size: 13px
+}
+
+.home-contact-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap
+}
+
+.home-contact-links a {
+    color: #b7d8ff;
+    font-size: 14px;
+    font-weight: 630
+}
+
+/* Compact grids on tablets; single-column project cards on mobile. */
+@media(max-width:940px) {
+    .home-intro {
+        gap: 25px;
+        grid-template-columns: 1.4fr 1fr;
+        padding-block: 68px
+    }
+
+    .home-project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .home-about-grid {
+        gap: 35px
+    }
+}
+
+@media(max-width:650px) {
+    .home-page .container {
+        width: calc(100% - 36px)
+    }
+
+    .home-intro {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-block: 48px
+    }
+
+    .home-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 15px
+    }
+
+    .home-info>div:last-child {
+        grid-column: 1/-1
+    }
+
+    .home-intro h1 {
+        font-size: 41px
+    }
+
+    .home-lead {
+        font-size: 15px
+    }
+
+    .home-section {
+        padding-block: 50px
+    }
+
+    .home-section-title {
+        align-items: start;
+        flex-direction: column;
+        gap: 6px
+    }
+
+    .home-project-grid,
+    .home-skills-grid,
+    .home-about-grid {
+        grid-template-columns: 1fr
+    }
+
+    .home-project-thumb {
+        height: 235px
+    }
+
+    .home-project-content {
+        padding: 22px
+    }
+
+    .home-contact-row {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .home-contact-links {
+        gap: 20px
+    }
+
+    .home-skills-grid {
+        gap: 20px
+    }
+}

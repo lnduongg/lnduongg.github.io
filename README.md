@@ -16,6 +16,11 @@ https://lnduongg.github.io/
 - [Play / Download](https://lnduongg.itch.io/you-hear-that)
 - [Technical Documentation](https://github.com/lnduongg/You-Hear-That)
 
+### Mara Hekate Escaping
+3D fan game.
+
+- [Play / Download](https://lnduongg.itch.io/mara-hekate-escaping)
+
 ### GIS Weather Map
 Web-based geographic information and weather visualization project.
 
